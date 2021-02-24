@@ -1,11 +1,13 @@
 #include <iostream>
-#include "include/ant.h"
+#include "include/world.h"
 
 
 int main(void)
 {
-	Ant_t hormi(10,10);
-    hormi.get_y();
-    hormi.set_x(20);
-    hormi.datos_hormiga();
+	World_t mu(3,3);
+
+    mu.reset_matrix();
+    mu.change_color(2,2,'c');
+    mu.change_color(1,1,'f');
+    mu.write();
 }
